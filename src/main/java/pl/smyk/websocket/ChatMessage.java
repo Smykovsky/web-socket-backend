@@ -8,7 +8,6 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "chat_messages")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -18,5 +17,4 @@ public class ChatMessage {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String value;
-    private String user;
 }
