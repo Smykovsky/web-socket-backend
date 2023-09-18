@@ -1,4 +1,4 @@
-package pl.smyk.websocket;
+package pl.smyk.websocket.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,5 +16,9 @@ public class ChatMessage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String value;
+    private String senderName;
+    private String receiverName;
+    private String message;
+    private String date;
+    private Status status;
 }
